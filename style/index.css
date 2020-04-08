@@ -1,1 +1,236 @@
-/* Add CSS styling here */
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  max-width: 100%;
+}
+
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  text-align: center;
+  background-image: url('../images/seamless-pattern_1159-5086.jpg');
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+/* Header */
+header {
+  background-color: #fca7c8;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 3px solid #940a5d;
+}
+
+h1 {
+  padding: 2% 0 0 3%;
+  font-size: 4em;
+  text-align: left;
+  font-family: 'Pacifico', cursive;
+  color: #940a5d;
+}
+
+nav {
+  display: flex;
+  padding: 1% 0 0 4%;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+nav a {
+  min-width: 15%;
+  padding: 1% 2%;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 1%;
+  background-color: white;
+  color: #940a5d;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+}
+
+nav a:hover {
+  text-transform: uppercase;
+}
+
+/* Featured */
+.intro h2 {
+  font-size: 3.5em;
+  font-family: 'Pacifico', cursive;
+  color: #940a5d;
+}
+
+.featured img {
+  border: 2px solid black;
+  margin: 4%;
+  max-width: 90%;
+}
+
+div button {
+  padding: 2% 3%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: white;
+  letter-spacing: 1.5px;
+  font-size: 1.1em;
+  min-width: 25%;
+}
+
+div button a {
+  color: #940a5d;
+  text-decoration: none;
+}
+
+div button a:hover {
+  text-transform: uppercase;
+}
+
+.project-button {
+  margin: 4% 0%;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.3;
+  padding: 1% 3% 3% 3%;
+}
+
+/* Other Projects */
+.other-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 2% 0%;
+  border: solid black 2px;
+  background-color: white;
+}
+
+.project h3 {
+  font-size: 1.9em;
+  padding: 2%;
+  margin: 2%;
+  color: #940a5d;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: palevioletred;
+  padding: 2% 0%;
+}
+
+footer h2 {
+  font-size: 2.3em;
+  font-family: 'Pacifico', cursive;
+}
+
+footer button {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2em;
+  min-width: 10%;
+  margin: 1%;
+  background-color: white;
+  font-weight: bold;
+}
+
+footer button:hover {
+  text-transform: uppercase;
+}
+
+footer button a {
+  color: #940a5d;
+  text-decoration: none;
+}
+
+.icons {
+  font-size: 2em;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.icons a {
+  margin: 0 1%;
+  color: white;
+}
+
+.icons a:hover {
+  color: #940a5d;
+}
+
+/* All Media Queries */
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 6em;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project {
+    width: 30%;
+  }
+
+  .featured img {
+    width: 50%;
+  }
+
+  nav a {
+    margin: 3px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+    text-align: left;
+  }
+
+  .intro div button {
+    margin: 0;
+  }
+
+  .about-me p {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  nav a {
+    min-width: 10%;
+  }
+
+  .intro h2 {
+    font-size: 3.5em;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+}
