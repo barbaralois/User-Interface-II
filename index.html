@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/index2.css" type="text/css" />
+    <link rel="stylesheet" href="./style/index.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,6 +16,9 @@
   </head>
   <body>
     <header>
+      <span class="hidden"
+        ><a href="#main-content">CLick here to skip to main content</a></span
+      >
       <h1>Barbara Moore</h1>
       <nav>
         <a href="./index.html">Home</a>
@@ -24,9 +27,13 @@
         <a href="./projects.html">Projects</a>
       </nav>
     </header>
+    <span id="main-content"></span>
     <section class="featured">
       <div class="image">
-        <img src="./images/syd-and-i.JPG" />
+        <img
+          src="./images/syd-and-i.JPG"
+          alt="a woman wearing glasses with a cat lying in her arms"
+        />
       </div>
       <div class="intro">
         <h2>Barbara Moore</h2>
@@ -49,27 +56,36 @@
     </section>
     <section class="other-projects">
       <div class="project">
-        <img src="./images/007.JPG" />
+        <img src="./images/007.JPG" alt="a cat lying in a shopping bag" />
         <h3>Project Name</h3>
       </div>
       <div class="project">
-        <img src="./images/020.JPG" />
+        <img
+          src="./images/020.JPG"
+          alt="a cat sitting in a plastic grocery bag"
+        />
         <h3>Project Name</h3>
       </div>
       <div class="project">
-        <img src="./images/043.JPG" />
+        <img
+          src="./images/043.JPG"
+          alt="a close up photo of a cat on a white blanket"
+        />
         <h3>Project Name</h3>
       </div>
       <div class="project">
-        <img src="./images/048.JPG" />
+        <img src="./images/048.JPG" alt="a cat looking out a screened window" />
         <h3>Project Name</h3>
       </div>
       <div class="project">
-        <img src="./images/118.JPG" />
+        <img src="./images/118.JPG" alt="a cat crouching on a cat tree" />
         <h3>Project Name</h3>
       </div>
       <div class="project">
-        <img src="./images/glamour-shot.jpg" />
+        <img
+          src="./images/glamour-shot.jpg"
+          alt="a tortoise shell cat sitting on a computer tower"
+        />
         <h3>Project Name</h3>
       </div>
     </section>
@@ -83,7 +99,9 @@
           ><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i
         ></a>
       </div>
-      <button><a href="./contact.html">Contact Me</a></button>
+      <div class="footer-button">
+        <button><a href="./contact.html">Contact Me</a></button>
+      </div>
     </footer>
   </body>
 </html>
