@@ -1,0 +1,247 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  max-width: 100%;
+}
+
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  text-align: center;
+  background-image: url('../images/seamless-pattern_1159-5086.jpg');
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-color: #fca7c8;
+  min-height: 12vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  padding: 1% 0 0 3%;
+  font-size: 3.2rem;
+  text-align: left;
+  font-family: 'Pacifico', cursive;
+  color: #940a5d;
+}
+
+nav {
+  display: flex;
+  padding-left: 4%;
+  align-items: center;
+}
+
+nav a {
+  min-width: 8%;
+  padding: 0.5%;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 0.5% 0.5% 1%;
+  background-color: white;
+  color: #940a5d;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+nav a:hover {
+  text-transform: uppercase;
+}
+
+/* Featured */
+.featured {
+  display: flex;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+
+.image,
+.intro {
+  width: 45%;
+}
+
+.intro {
+  background-color: #fff0f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  padding: 2%;
+}
+
+.image img,
+.intro {
+  border: solid white 15px;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #940a5d;
+  font-size: 3.4rem;
+}
+
+div button {
+  padding: 1.5% 3%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: white;
+  font-size: 1rem;
+}
+
+div button a {
+  color: #940a5d;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  padding-top: 2%;
+  letter-spacing: -0.5px;
+}
+
+/* Media Queries */
+@media (max-width: 1366px) {
+  h1 {
+    font-size: 2.7rem;
+    padding: 0.5% 0 0 3%;
+  }
+
+  .image img,
+  .intro {
+    border: solid white 10px;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    align-items: center;
+    margin-bottom: 1%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  nav {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 1%;
+  }
+
+  nav a {
+    min-width: 18%;
+    padding: 1.25%;
+    font-size: 1.1rem;
+  }
+
+  .featured {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .image img,
+  .intro {
+    border: solid white 7px;
+  }
+
+  .image,
+  .intro {
+    width: 90%;
+    margin: 1%;
+  }
+
+  .intro {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-button {
+    min-width: 25%;
+    padding: 3% 0;
+  }
+
+  div button {
+    padding: 5% 8%;
+  }
+
+  p {
+    padding: 1% 0% 3%;
+  }
+}
+
+@media (max-width: 360px) {
+  header {
+    border-bottom: 1px solid #2b2b2b;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    margin-bottom: 2%;
+    justify-content: space-around;
+  }
+  nav a {
+    border: 1px solid black;
+    padding: 1.5%;
+    min-width: 22%;
+    font-size: 0.8rem;
+  }
+
+  .image img,
+  .intro {
+    border: solid 4px white;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .project-button {
+    width: 50%;
+  }
+
+  div button {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
